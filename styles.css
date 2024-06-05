@@ -37,6 +37,12 @@ body {
   color: var(--clr-gray-5);
   background-color: var(--clr-gray-1);
   -webkit-font-smoothing: antialiased;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 a {
@@ -50,20 +56,26 @@ img {
 
 blockquote {
   border: 1px solid var(--clr-gray-3);
-  border-radius: 4px;
+  border-radius: 5px;
+  line-height: 1.4;
   padding: 18px;
-}
-
-.flex {
-  display: flex;
-  align-items: center;
+  margin-top: 10px;
 }
 
 .main {
   max-width: 730px;
   margin: auto;
   background-color: var(--clr-white);
+  border-radius: 15px;
   padding: 3rem;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font: inherit;
+  color: inherit;
 }
 
 /******************************/
@@ -71,7 +83,10 @@ blockquote {
 /******************************/
 
 .header__container {
+  display: flex;
+  align-items: center;
   justify-content: space-between;
+  margin-bottom: 3rem;
 }
 
 .header__title {
@@ -101,9 +116,11 @@ blockquote {
 }
 
 .notification__card {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
   border-radius: 10px;
   padding: 16px;
-  gap: 1.8rem;
 }
 
 .column__left {
@@ -123,9 +140,12 @@ blockquote {
 
 .notification__user {
   color: var(--clr-gray-6);
+  margin-right: 4px;
 }
 
 .notification__status {
+  display: flex;
+  align-items: center;
   line-height: 1.5;
 }
 
@@ -135,14 +155,25 @@ blockquote {
 
 .post {
   color: var(--clr-gray-5);
+  margin-left: 4px;
 }
 
 .group {
   color: var(--clr-primary-blue);
+  margin-left: 4px;
 }
 
-.notification__card--new {
+.notification__card--unread {
   background-color: var(--clr-gray-1);
+}
+
+.dot--unread {
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  background-color: var(--clr-primary-red);
+  border-radius: 50%;
+  margin-left: 1rem;
 }
 
 .private-message {

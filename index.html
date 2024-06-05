@@ -18,15 +18,15 @@
   <body>
     <main class="main">
       <section id="header" class="section" role="header">
-        <div class="header__container flex">
+        <div class="header__container">
           <h1 class="header__title">Notifications<span>3</span></h1>
-          <p class="header__all-read">Mark all as read</p>
+          <button type="button" class="btn">Mark all as read</button>
         </div>
       </section>
 
       <section id="notification" class="section">
         <div class="notification__container">
-          <article class="notification__card flex notification__card--new">
+          <article class="notification__card notification__card--unread">
             <figure class="column__left">
               <img
                 class="notification__avatar"
@@ -35,16 +35,19 @@
               />
             </figure>
             <div class="column__right">
-              <p class="notification__status">
-                <a class="notification__user" href="/">Mark Webber</a>
-                reacted to your recent post
-                <a class="post" href="/">My first tournament today!</a>
-              </p>
+              <div class="notification__status">
+                <p>
+                  <a class="notification__user" href="/">Mark Webber</a>
+                  reacted to your recent post
+                  <a class="post" href="/">My first tournament today!</a>
+                </p>
+                <span class="dot--unread"></span>
+              </div>
               <p class="notification__date">1m ago</p>
             </div>
           </article>
 
-          <article class="notification__card flex notification__card--new">
+          <article class="notification__card notification__card--unread">
             <figure class="column__left">
               <img
                 class="notification__avatar"
@@ -53,15 +56,18 @@
               />
             </figure>
             <div class="column__right">
-              <p class="notification__status">
-                <a class="notification__user" href="/">Angela Gray</a> followed
-                you
-              </p>
+              <div class="notification__status">
+                <p>
+                  <a class="notification__user" href="/">Angela Gray</a>
+                  followed you
+                </p>
+                <span class="dot--unread"></span>
+              </div>
               <p class="notification__date">5m ago</p>
             </div>
           </article>
 
-          <article class="notification__card flex notification__card--new">
+          <article class="notification__card notification__card--unread">
             <figure class="column__left">
               <img
                 class="notification__avatar"
@@ -70,16 +76,18 @@
               />
             </figure>
             <div class="column__right">
-              <p class="notification__status">
-                <a class="notification__user" href="/">Jacob Thompson</a> has
-                joined your group
-                <a class="group" href="/">Chess Club</a>
-              </p>
+              <div class="notification__status">
+                <p>
+                  <a class="notification__user" href="/">Jacob Thompson</a> has
+                  joined your group <a class="group" href="/">Chess Club</a>
+                </p>
+                <span class="dot--unread"></span>
+              </div>
               <p class="notification__date">1 day ago</p>
             </div>
           </article>
 
-          <article class="notification__card flex private-message">
+          <article class="notification__card private-message">
             <figure class="column__left">
               <img
                 class="notification__avatar"
@@ -88,10 +96,12 @@
               />
             </figure>
             <div class="column__right">
-              <p class="notification__status">
-                <a class="notification__user" href="/">Rizky Hasanuddin</a>
-                sent you a private message
-              </p>
+              <div class="notification__status">
+                <p>
+                  <a class="notification__user" href="/">Rizky Hasanuddin</a>
+                  sent you a private message
+                </p>
+              </div>
               <p class="notification__date">5 days ago</p>
               <blockquote>
                 <p>
@@ -103,7 +113,7 @@
             </div>
           </article>
 
-          <article class="notification__card flex">
+          <article class="notification__card">
             <figure class="column__left">
               <img
                 class="notification__avatar"
@@ -112,15 +122,17 @@
               />
             </figure>
             <div class="column__right">
-              <p class="notification__status">
-                <a class="notification__user" href="/">Kimberly Smith</a>
-                commented on your picture
-              </p>
+              <div class="notification__status">
+                <p>
+                  <a class="notification__user" href="/">Kimberly Smith</a>
+                  commented on your picture
+                </p>
+              </div>
               <p class="notification__date">1 week ago</p>
             </div>
           </article>
 
-          <article class="notification__card flex">
+          <article class="notification__card">
             <figure class="column__left">
               <img
                 class="notification__avatar"
@@ -129,18 +141,20 @@
               />
             </figure>
             <div class="column__right">
-              <p class="notification__status">
-                <a class="notification__user" href="/">Nathan Peterson</a>
-                reacted to your recent post
-                <a class="post" href="/"
-                  >5 end-game strategies to increase your win rate</a
-                >
-              </p>
+              <div class="notification__status">
+                <p>
+                  <a class="notification__user" href="/">Nathan Peterson</a>
+                  reacted to your recent post
+                  <a class="post" href="/"
+                    >5 end-game strategies to increase your win rate</a
+                  >
+                </p>
+              </div>
               <p class="notification__date">2 weeks ago</p>
             </div>
           </article>
 
-          <article class="notification__card flex">
+          <article class="notification__card">
             <figure class="column__left">
               <img
                 class="notification__avatar"
@@ -149,11 +163,13 @@
               />
             </figure>
             <div class="column__right">
-              <p class="notification__status">
-                <a class="notification__user" href="/">Anna Kim</a> left the
-                group
-                <a class="group" href="/">Chess Club</a>
-              </p>
+              <div class="notification__status">
+                <p>
+                  <a class="notification__user" href="/">Anna Kim</a> left the
+                  group
+                  <a class="group" href="/">Chess Club</a>
+                </p>
+              </div>
               <p class="notification__date">2 weeks ago</p>
             </div>
           </article>
@@ -167,7 +183,7 @@
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by <a href="#">Stacy</a>.
       </p>
     </footer>
   </body>
