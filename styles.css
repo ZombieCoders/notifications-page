@@ -63,6 +63,8 @@ a:active {
 
 img {
   display: block;
+  width: 100%;
+  object-fit: cover;
 }
 
 blockquote {
@@ -199,6 +201,17 @@ blockquote:hover {
   margin: 0px 0px 1px 10px;
 }
 
+.picture {
+  margin-left: auto;
+}
+
+.picture img {
+  height: 45px;
+  width: 45px;
+  border: 2px solid var(--clr-gray-3);
+  border-radius: 8px;
+}
+
 /******************************/
 /*********** FOOTER ***********/
 /******************************/
@@ -231,8 +244,6 @@ blockquote:hover {
 
   .header__title {
     font-size: 1.8rem;
-    font-weight: 800;
-    color: var(--clr-gray-6);
   }
 
   .header__title span {
