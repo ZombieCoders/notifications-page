@@ -11,21 +11,20 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="styles.css" />
 
     <title>Frontend Mentor | Notifications page</title>
   </head>
   <body>
-    <div class="container">
-      <header class="header">
+    <main class="main">
+      <section id="header" class="section" role="header">
         <div class="header__container">
-          <h1 class="header__title">
-            Notifications<span class="header__unread-number">3</span>
-          </h1>
+          <h1 class="header__title">Notifications<span>3</span></h1>
           <p class="header__all-read">Mark all as read</p>
         </div>
-      </header>
+      </section>
 
-      <main class="main">
+      <sectio id="notification" class="section">
         <div class="notification__container">
           <article class="notification__card">
             <figure class="column__left">
@@ -33,7 +32,7 @@
             </figure>
             <div class="column__right">
               <p class="notification__status">
-                <a class="notification__user" href="#">Mark Webber</a> reacted
+                <a class="notification__user" href="/">Mark Webber</a> reacted
                 to your recent post
                 <a class="post" href="/">My first tournament today!</a>
               </p>
@@ -47,7 +46,8 @@
             </figure>
             <div class="column__right">
               <p class="notification__status">
-                <a href="/">Angela Gray</a> followed you
+                <a class="notification__user" href="/">Angela Gray</a> followed
+                you
               </p>
               <p class="notification__date">5m ago</p>
             </div>
@@ -59,7 +59,8 @@
             </figure>
             <div class="column__right">
               <p class="notification__status">
-                <a href="/">Jacob Thompson</a> has joined your group
+                <a class="notification__user" href="/">Jacob Thompson</a> has
+                joined your group
                 <a class="group" href="/">Chess Club</a>
               </p>
               <p class="notification__date">1 day ago</p>
@@ -72,7 +73,7 @@
             </figure>
             <div class="column__right">
               <p class="notification__status">
-                <a href="/">Rizky Hasanuddin</a>
+                <a class="notification__user" href="/">Rizky Hasanuddin</a>
                 sent you a private message
               </p>
               <p class="notification__date">5 days ago</p>
@@ -90,7 +91,8 @@
             </figure>
             <div class="column__right">
               <p class="notification__status">
-                <a href="/">Kimberly Smith</a> commented on your picture
+                <a class="notification__user" href="/">Kimberly Smith</a>
+                commented on your picture
               </p>
               <p class="notification__date">1 week ago</p>
             </div>
@@ -102,7 +104,7 @@
             </figure>
             <div class="column__right">
               <p class="notification__status">
-                <a href="/">Nathan Peterson</a>
+                <a class="notification__user" href="/">Nathan Peterson</a>
                 reacted to your recent post
                 <a class="post" href="/"
                   >5 end-game strategies to increase your win rate</a
@@ -118,15 +120,16 @@
             </figure>
             <div class="column__right">
               <p class="notification__status">
-                <a href="/">Anna Kim</a> left the group
+                <a class="notification__user" href="/">Anna Kim</a> left the
+                group
                 <a class="group" href="/">Chess Club</a>
               </p>
               <p class="notification__date">2 weeks ago</p>
             </div>
           </article>
         </div>
-      </main>
-    </div>
+      </sectio>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
