@@ -33,6 +33,7 @@ body {
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 1.6rem;
   font-weight: 600;
+  line-height: 1;
   color: var(--clr-gray-5);
   background-color: var(--clr-gray-1);
   -webkit-font-smoothing: antialiased;
@@ -100,7 +101,6 @@ blockquote {
 }
 
 .notification__card {
-  background-color: var(--clr-gray-1);
   border-radius: 10px;
   padding: 16px;
   gap: 1.8rem;
@@ -110,6 +110,12 @@ blockquote {
   align-self: flex-start;
 }
 
+.column__right {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
 .notification__avatar {
   height: 45px;
   width: 45px;
@@ -117,6 +123,10 @@ blockquote {
 
 .notification__user {
   color: var(--clr-gray-6);
+}
+
+.notification__status {
+  line-height: 1.5;
 }
 
 .notification__date {
@@ -129,6 +139,10 @@ blockquote {
 
 .group {
   color: var(--clr-primary-blue);
+}
+
+.notification__card--new {
+  background-color: var(--clr-gray-1);
 }
 
 .private-message {
