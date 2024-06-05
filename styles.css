@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 :root {
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
   --clr-primary-red: hsl(1, 90%, 64%); /* new */
   --clr-primary-blue: hsl(219, 85%, 26%); /* group */
-
+  --clr-primary-bright-blue: hsl(240, 92%, 36%); /* hover */
   --clr-white: hsl(0, 0%, 100%); /* main */
   --clr-gray-1: hsl(210, 60%, 98%); /* body, card */
-  --clr-gray-2: hsl(211, 68%, 94%);
+  --clr-gray-2: hsl(211, 68%, 94%); /* quote */
   --clr-gray-3: hsl(205, 33%, 90%);
   --clr-gray-4: hsl(219, 14%, 63%); /* date, border */
   --clr-gray-5: hsl(219, 12%, 42%); /* text-color */
   --clr-gray-6: hsl(224, 21%, 14%); /* user */
+
+  --transition: all 0.4s ease;
 }
 
 *,
@@ -30,7 +33,7 @@ html {
 /******************************/
 
 body {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: var(--font-sans);
   font-size: 1.6rem;
   font-weight: 600;
   line-height: 1;
@@ -45,9 +48,16 @@ body {
   min-height: 100vh;
 }
 
-a {
+a:link,
+a:visited {
   text-decoration: none;
   font-weight: 800;
+  transition: var(--transition);
+}
+
+a:hover,
+a:active {
+  color: var(--clr-primary-bright-blue);
 }
 
 img {
@@ -55,11 +65,17 @@ img {
 }
 
 blockquote {
-  border: 1px solid var(--clr-gray-3);
+  cursor: pointer;
+  border: 1px solid var(--clr-gray-2);
   border-radius: 5px;
   line-height: 1.4;
   padding: 18px;
   margin-top: 10px;
+  transition: var(--transition);
+}
+
+blockquote:hover {
+  background-color: var(--clr-gray-2);
 }
 
 .main {
@@ -76,6 +92,12 @@ blockquote {
   border: none;
   font: inherit;
   color: inherit;
+  transition: color;
+}
+
+.btn:hover {
+  color: var(--clr-primary-blue);
+  transition: var(--transition);
 }
 
 /******************************/
@@ -141,6 +163,7 @@ blockquote {
 .notification__user {
   color: var(--clr-gray-6);
   margin-right: 4px;
+  transition: color 1s ease;
 }
 
 .notification__status {
@@ -156,6 +179,7 @@ blockquote {
 .post {
   color: var(--clr-gray-5);
   margin-left: 4px;
+  transition: color 1s ease;
 }
 
 .group {
@@ -167,17 +191,13 @@ blockquote {
   background-color: var(--clr-gray-1);
 }
 
-.dot--unread {
+.active {
   display: inline-block;
   height: 8px;
   width: 8px;
   background-color: var(--clr-primary-red);
   border-radius: 50%;
   margin-left: 1rem;
-}
-
-.private-message {
-  background-color: var(--clr-white);
 }
 
 /******************************/

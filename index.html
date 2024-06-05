@@ -19,7 +19,9 @@
     <main class="main">
       <section id="header" class="section" role="header">
         <div class="header__container">
-          <h1 class="header__title">Notifications<span>3</span></h1>
+          <h1 class="header__title">
+            Notifications<span class="count">3</span>
+          </h1>
           <button type="button" class="btn">Mark all as read</button>
         </div>
       </section>
@@ -31,7 +33,7 @@
               <img
                 class="notification__avatar"
                 src="./assets/images/avatar-mark-webber.webp"
-                alt=""
+                alt="Mark Webber"
               />
             </figure>
             <div class="column__right">
@@ -41,7 +43,7 @@
                   reacted to your recent post
                   <a class="post" href="/">My first tournament today!</a>
                 </p>
-                <span class="dot--unread"></span>
+                <span class="dot active"></span>
               </div>
               <p class="notification__date">1m ago</p>
             </div>
@@ -52,7 +54,7 @@
               <img
                 class="notification__avatar"
                 src="./assets/images/avatar-angela-gray.webp"
-                alt=""
+                alt="Angela Gray"
               />
             </figure>
             <div class="column__right">
@@ -61,7 +63,7 @@
                   <a class="notification__user" href="/">Angela Gray</a>
                   followed you
                 </p>
-                <span class="dot--unread"></span>
+                <span class="dot active"></span>
               </div>
               <p class="notification__date">5m ago</p>
             </div>
@@ -72,7 +74,7 @@
               <img
                 class="notification__avatar"
                 src="./assets/images/avatar-jacob-thompson.webp"
-                alt=""
+                alt="Jacob Thompson"
               />
             </figure>
             <div class="column__right">
@@ -81,18 +83,18 @@
                   <a class="notification__user" href="/">Jacob Thompson</a> has
                   joined your group <a class="group" href="/">Chess Club</a>
                 </p>
-                <span class="dot--unread"></span>
+                <span class="dot active"></span>
               </div>
               <p class="notification__date">1 day ago</p>
             </div>
           </article>
 
-          <article class="notification__card private-message">
+          <article class="notification__card">
             <figure class="column__left">
               <img
                 class="notification__avatar"
                 src="./assets/images/avatar-rizky-hasanuddin.webp"
-                alt=""
+                alt="Rizky Hasanuddin"
               />
             </figure>
             <div class="column__right">
@@ -101,6 +103,7 @@
                   <a class="notification__user" href="/">Rizky Hasanuddin</a>
                   sent you a private message
                 </p>
+                <span class="dot"></span>
               </div>
               <p class="notification__date">5 days ago</p>
               <blockquote>
@@ -118,7 +121,7 @@
               <img
                 class="notification__avatar"
                 src="./assets/images/avatar-kimberly-smith.webp"
-                alt=""
+                alt="Kimberly Smith"
               />
             </figure>
             <div class="column__right">
@@ -127,6 +130,7 @@
                   <a class="notification__user" href="/">Kimberly Smith</a>
                   commented on your picture
                 </p>
+                <span class="dot"></span>
               </div>
               <p class="notification__date">1 week ago</p>
             </div>
@@ -137,7 +141,7 @@
               <img
                 class="notification__avatar"
                 src="./assets/images/avatar-nathan-peterson.webp"
-                alt=""
+                alt="Nathan Peterson"
               />
             </figure>
             <div class="column__right">
@@ -149,6 +153,7 @@
                     >5 end-game strategies to increase your win rate</a
                   >
                 </p>
+                <span class="dot"></span>
               </div>
               <p class="notification__date">2 weeks ago</p>
             </div>
@@ -159,7 +164,7 @@
               <img
                 class="notification__avatar"
                 src="./assets/images/avatar-anna-kim.webp"
-                alt=""
+                alt="Anna Kim"
               />
             </figure>
             <div class="column__right">
@@ -169,6 +174,7 @@
                   group
                   <a class="group" href="/">Chess Club</a>
                 </p>
+                <span class="dot"></span>
               </div>
               <p class="notification__date">2 weeks ago</p>
             </div>
@@ -186,5 +192,7 @@
         >. Coded by <a href="#">Stacy</a>.
       </p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
