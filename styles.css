@@ -2,17 +2,17 @@
 
 :root {
   --font-sans: 'Plus Jakarta Sans', sans-serif;
-  --clr-primary-red: hsl(1, 90%, 64%); /* new */
-  --clr-primary-blue: hsl(219, 85%, 26%); /* group */
-  --clr-primary-bright-blue: hsl(240, 92%, 36%); /* hover */
-  --clr-primary-light-blue: hsl(228, 45%, 44%); /* attribution */
-  --clr-white: hsl(0, 0%, 100%); /* main */
-  --clr-gray-1: hsl(210, 60%, 98%); /* body, card */
-  --clr-gray-2: hsl(211, 68%, 94%); /* quote */
+  --clr-primary-red: hsl(1, 90%, 64%);
+  --clr-primary-blue: hsl(219, 85%, 26%);
+  --clr-primary-bright-blue: hsl(240, 92%, 36%);
+  --clr-primary-light-blue: hsl(228, 45%, 44%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-gray-1: hsl(210, 60%, 98%);
+  --clr-gray-2: hsl(211, 68%, 94%);
   --clr-gray-3: hsl(205, 33%, 90%);
-  --clr-gray-4: hsl(219, 14%, 63%); /* date, border */
-  --clr-gray-5: hsl(219, 12%, 42%); /* text-color */
-  --clr-gray-6: hsl(224, 21%, 14%); /* user */
+  --clr-gray-4: hsl(219, 14%, 63%);
+  --clr-gray-5: hsl(219, 12%, 42%);
+  --clr-gray-6: hsl(224, 21%, 14%);
 
   --transition: all 0.4s ease;
 }
