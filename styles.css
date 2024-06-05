@@ -43,6 +43,10 @@ a {
   font-weight: 800;
 }
 
+img {
+  display: block;
+}
+
 blockquote {
   border: 1px solid var(--clr-gray-3);
   border-radius: 4px;
@@ -98,6 +102,17 @@ blockquote {
 .notification__card {
   background-color: var(--clr-gray-1);
   border-radius: 10px;
+  padding: 16px;
+  gap: 1.8rem;
+}
+
+.column__left {
+  align-self: flex-start;
+}
+
+.notification__avatar {
+  height: 45px;
+  width: 45px;
 }
 
 .notification__user {
