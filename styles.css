@@ -25,6 +25,10 @@ html {
   font-size: 62.5%;
 }
 
+/******************************/
+/******* GENERAL STYLES *******/
+/******************************/
+
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 1.6rem;
@@ -39,6 +43,17 @@ a {
   font-weight: 800;
 }
 
+blockquote {
+  border: 1px solid var(--clr-gray-3);
+  border-radius: 4px;
+  padding: 18px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
 .main {
   max-width: 730px;
   margin: auto;
@@ -46,9 +61,11 @@ a {
   padding: 3rem;
 }
 
+/******************************/
+/*********** HEADER ***********/
+/******************************/
+
 .header__container {
-  display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -56,19 +73,21 @@ a {
   display: flex;
   align-items: center;
   gap: 1rem;
-
   color: var(--clr-gray-6);
   font-weight: 800;
 }
 
 .header__title span {
-  /* display: block; */
   font-size: 1.4rem;
   color: var(--clr-white);
   background-color: var(--clr-primary-blue);
   border-radius: 5px;
   padding: 3px 9px;
 }
+
+/******************************/
+/******** NOTIFICATION ********/
+/******************************/
 
 .notification__container {
   display: grid;
@@ -97,8 +116,16 @@ a {
   color: var(--clr-primary-blue);
 }
 
+.private-message {
+  background-color: var(--clr-white);
+}
+
+/******************************/
+/*********** FOOTER ***********/
+/******************************/
+
 .attribution {
-  font-size: 11px;
+  font-size: 1.1rem;
   text-align: center;
 }
 .attribution a {
