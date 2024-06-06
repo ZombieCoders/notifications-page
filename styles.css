@@ -107,14 +107,14 @@ blockquote:hover {
 /*********** HEADER ***********/
 /******************************/
 
-.header__container {
+.heading__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 3.5rem;
 }
 
-.header__title {
+.heading__title {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -122,7 +122,7 @@ blockquote:hover {
   font-weight: 800;
 }
 
-.header__title span {
+.heading__title span {
   font-size: 1.6rem;
   color: var(--clr-white);
   background-color: var(--clr-primary-blue);
@@ -238,15 +238,15 @@ blockquote:hover {
     padding: 2.4rem 1.6rem;
   }
 
-  .header__container {
+  .heading__container {
     margin-bottom: 2.5rem;
   }
 
-  .header__title {
+  .heading__title {
     font-size: 1.8rem;
   }
 
-  .header__title span {
+  .heading__title span {
     font-size: 1.6rem;
     padding: 4px 10px;
   }
