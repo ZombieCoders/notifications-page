@@ -152,7 +152,7 @@ blockquote:hover {
   align-items: center;
   gap: 1rem;
   color: var(--clr-gray-6);
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .heading__title span {
