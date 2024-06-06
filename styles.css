@@ -123,11 +123,11 @@ blockquote:hover {
 }
 
 .header__title span {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: var(--clr-white);
   background-color: var(--clr-primary-blue);
-  border-radius: 5px;
-  padding: 3px 9px;
+  border-radius: 6px;
+  padding: 5px 11px;
 }
 
 /******************************/
