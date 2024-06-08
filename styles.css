@@ -13,7 +13,6 @@
   --clr-gray-4: hsl(219, 14%, 63%);
   --clr-gray-5: hsl(219, 12%, 42%);
   --clr-gray-6: hsl(224, 21%, 14%);
-
   --transition: all 0.4s ease;
 }
 
@@ -42,10 +41,10 @@ body {
   background-color: var(--clr-gray-1);
   -webkit-font-smoothing: antialiased;
 
-  /* display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; */
+  justify-content: center;
   min-height: 100vh;
 }
 
